@@ -1,0 +1,31 @@
+.programms{
+	padding-top: 190px;
+	padding-bottom: 170px;
+	background-color: #fff;
+}
+.programms-title{
+	margin-bottom: 90px;
+}
+.programms-content{
+	.programms-list{
+		width: 48%;
+		max-width:550px;
+	}
+	.programms-img{
+		width: 50%;
+	}
+}
+.programms-content{
+	@media(max-width:991px){
+		flex-direction: column;
+		.programms-list{
+			width: 100%;
+		}
+		.programms-img{
+			width: 100%;
+			max-width:550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

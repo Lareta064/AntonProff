@@ -17,11 +17,17 @@
 	font-size: 20px;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
+	@media(max-width:1199px){
+		font-size: 18px;
+	}
+	@media(max-width:767px){
+		font-size: 16px;
+	}
   }
   .noscroll {
 	overflow: hidden;
   }
-  .header-menu,
+  
   .container {
 	width: 1300px;
 	margin-left: auto;
@@ -68,7 +74,7 @@
   figure {
 	margin: 0;
   }
-  img {
+  img, svg {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
@@ -88,11 +94,14 @@
 	display: inline-block;
   }
  
-  input[type="radio"], input[type='checkbox'], input[type="submit"]{
+  input[type="radio"], 
+  input[type='checkbox'], 
+  input[type="submit"]{
 	  appearance: none;
 	  -moz-appearance: none;
-  -webkit-appearance: none;
+  	-webkit-appearance: none;
   }
+
   .flex-wrapper{
 	  display: flex;
 	  justify-content: space-between;
@@ -118,6 +127,11 @@
 		font-size: 26px;
 	}
   }
+.title-2{
+	color: $blue;
+	text-shadow: none;
+	font-weight: 700;
+}
 .title-4{
 	font-family: $ffr;
 font-weight: 700;

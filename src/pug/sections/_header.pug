@@ -1,16 +1,14 @@
 header.header
-	// header-menu
-	//- .header-top 
-	//- 	.container
-	.header-menu
-		+headerNav([
-			{link: '#', text: 'Наши программы'},
-			{link: '#', text: 'Преимущества'},
-			{link: '#', text: 'О нас'},
-			{link: '#', text: 'Лицензии'},
-			{link: '#', text: 'Специальности'},
-			{link: '#', text: 'Документы по окончании'}
-		])
+	.header-menu.fixed
+		.container
+			+headerNav([
+				{link: '#', text: 'Наши программы'},
+				{link: '#', text: 'Преимущества'},
+				{link: '#', text: 'О нас'},
+				{link: '#', text: 'Лицензии'},
+				{link: '#', text: 'Специальности'},
+				{link: '#', text: 'Документы по окончании'}
+			])
 	.menu-toggle
 		span
 	// header-content
@@ -40,13 +38,7 @@ header.header
 		//- h1.title-1 title-1
 		//- a(href="#!").button.button--light Смотреть
 		//- button.button.button--color Смотреть
-		//- +list-icon([
-		//- 	{mix: 'pr1', text1: 'Обучение рабочим специальностям', text2:'от 2900 рублей'},
-		//- 	{mix: 'pr1', text1: 'Электробезопасность', text2:'от 4100 рублей'},
-		//- 	{mix: 'pr1', text1: 'Профессиональная переподготовка', text2:'от 11400 рублей'},
-		//- 	{mix: 'pr1', text1: 'Сертификация ISO', text2:'от 9400 рублей'},
-		//- 	{mix: 'pr1', text1: 'Повышение квалификации', text2:'от 4000 рублей'},
-		//- 	])
+		//-poop
 		//- .flex-wrapper.benefits-wrapper
 		//- 	+benefitCrad('ben1', 'Работаем без предоплаты.', 'Оплата производится только после оформления.')
 		//- 	+benefitCrad('ben1', 'Работаем без предоплаты.', 'Оплата производится только после оформления.')
