@@ -1,0 +1,26 @@
+.list-item {
+	display: flex;
+	.list-item__icon{
+		flex-shrink: 0;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: $blue;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		border:1px solid transparent;
+	}
+	.list-item__text{
+		margin-left: 30px;
+		p{
+			line-height: 1.45;
+			font-feature-settings: 'pnum' on, 'lnum' on;
+		}
+		p:first-child{
+			font-weight: 700;
+			color: $blue;
+			font-size: 25px;
+		}
+	}
+}

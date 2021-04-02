@@ -1,0 +1,27 @@
+$sizes: ("md":767px, "lg":991px, "xl":1199px, "xxl": 1439px);
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $sizes {
+	  @if $media == $size {
+		@media(#{$minmax}-width: $resolution) {
+		  @content;
+		}
+	  }
+	}
+  }
+// @include media("max", "xl"){
+// 	.products-slider{
+// 		width: 880px;
+// 	}
+// 	.products-slider .slider-wrapper{
+// 		margin-left: 10px;
+// 		margin-right: 10px;
+// 	}
+// }
+
+$ffr:  'Raleway', sans-serif;
+$ffm: 'Montserrat', sans-serif;
+// color
+$blue: #2E7FFF ;
+$text: #3C3C3C;
+$yellow:#FFD336 ;
+$gam: #FFD336 ;

@@ -1,0 +1,63 @@
+/*===========GAMBURGER ============*/
+.menu-toggle {
+	display: none;
+	z-index: 100;
+	cursor:pointer;
+	width: 30px;
+	height: 25px;
+	
+	position: relative;
+	margin-left: 40px;
+	@media(max-width:1199px) {
+		display: flex;
+
+	}
+
+	span {
+		position: relative;
+		display: block;
+		margin: auto;
+		width: 30px;
+		height: 2px;
+		background-color: $gam;
+		transition: .3s;
+		
+	}
+
+	span:after,
+	span:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		height: 2px;
+		background-color: $gam;
+		right: 0;
+		transition: .3s;
+	}
+
+	span:after {
+		top: -10px;
+	}
+
+	span:before {
+		bottom: -10px;
+	}
+}
+.menu-toggle.active {
+	span {
+		background-color: transparent;
+	}
+
+	span:after {
+		top: 0px;
+		transform: rotate(45deg);
+		background-color: $gam;
+	}
+
+	span:before {
+		bottom: 0px;
+		transform: rotate(-45deg);
+		background-color: $gam;
+	}
+}
+/*===========END GAMBURGER ============*/

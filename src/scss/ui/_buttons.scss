@@ -1,0 +1,33 @@
+.button{
+	height: 70px;
+	width: 255px;
+	border-radius: 6px;
+	line-height: 70px;
+	background-color: transparent;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+	font-size: 22px;
+	font-weight: 700;
+	transition: .3s;
+	@media(max-width:767px){
+		height: 60px;
+		line-height: 60px;
+		font-size: 20px;
+	}
+}
+.button--light{
+	border: 2px solid #fff;
+	line-height: 66px;
+	@media(max-width:767px){
+	
+		line-height: 56px;
+	}
+}
+.button--color{
+	background: linear-gradient(90deg, #F8CE38 -8.98%, #FFCB13 116.21%);
+	
+}
+.button:hover{
+	background: linear-gradient(90deg, #2E7FFF -8.98%, #629FFF 116.21%);
+}

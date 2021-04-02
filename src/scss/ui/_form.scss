@@ -1,0 +1,33 @@
+.contact-form{
+	.form-item input{
+		width: 100%;
+		border:0;
+		background-color: transparent;
+		border-bottom: 2px solid #fff;
+		height: 41px;
+		font-weight: 700;
+		&::placeholder{
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+	.form-row{
+		display: flex;
+		align-items: center;
+		.form-item{width: 255px;}
+		.form-item + .form-item{margin-left: 35px;}
+		@media(max-width: 991px){
+			justify-content: center;
+		}
+	}
+}
+.form-btn{
+	a{margin-left: 35px;}
+	@media(max-width:767px){
+		&.form-row{
+			flex-direction: column;
+			a{margin-left: 0; margin-top: 20px;}
+		}
+	
+	}
+}

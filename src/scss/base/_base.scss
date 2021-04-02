@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+  }
+  
+  html {
+	scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: $text;
+	font-family: 'Raleway', sans-serif;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	font-size: 20px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+  }
+  .noscroll {
+	overflow: hidden;
+  }
+  .header-menu,
+  .container {
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media(max-width:1364px){
+		width: 1170px;
+	}
+	@media(max-width:1199px){
+		width: 960px;
+	}
+	@media(max-width:991px){
+		width: 730px;
+	}
+	@media(max-width:767px){
+		width: 540px;
+	}
+	@media(max-width:579px){
+		width: 290px;
+	}
+	
+  }
+ 
+  a,
+  a:hover {
+	text-decoration: none;
+	display: inline-block;
+  }
+  
+  ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+	padding: 0;
+	margin: 0;
+  }
+  figure {
+	margin: 0;
+  }
+  img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+  }
+  
+  input,
+  button {
+	outline: none;
+  }
+  
+  button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	display: inline-block;
+  }
+ 
+  input[type="radio"], input[type='checkbox'], input[type="submit"]{
+	  appearance: none;
+	  -moz-appearance: none;
+  -webkit-appearance: none;
+  }
+  .flex-wrapper{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .title-1, .title-2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 62px;
+	line-height: 1.23;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+	@media(max-width:1364px){
+		font-size: 54px;
+	}
+	@media(max-width:1199px){
+		font-size: 44px;
+	}
+	@media(max-width:991px){
+		font-size: 34px;
+	}
+	@media(max-width:767px){
+		font-size: 26px;
+	}
+  }
+.title-4{
+	font-family: $ffr;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.24;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #2E7FFF;
+}
+.text-26{
+	font-size: 26px;
+	line-height: 1.19;
+	@media(max-width:1199px){
+		font-size: 24px;
+	}
+	@media(max-width:991px){
+		font-size: 22px;
+	}
+	@media(max-width:767px){
+		font-size: 18px;
+	}
+}
+.text-blue{color: $blue;}
+.mt-44{
+	margin-top: 44px;
+	@media(max-width:767px){
+		margin-top: 34px;
+	}
+}
