@@ -10,9 +10,16 @@
 		justify-content: center;
 		align-items:center;
 		border:1px solid transparent;
+		@media(max-width: 991px){
+			width: 50px;
+			height: 50px;
+			svg{
+				transform: scale(0.7);
+			}
+		}
 	}
 	.list-item__text{
-		margin-left: 30px;
+		margin-left: 28px;
 		p{
 			line-height: 1.45;
 			font-feature-settings: 'pnum' on, 'lnum' on;
@@ -21,6 +28,21 @@
 			font-weight: 700;
 			color: $blue;
 			font-size: 25px;
+			@media(max-width: 1199px){
+				font-size: 22px;
+			}
+			@media(max-width: 767px){
+				font-size: 18px;
+			}
+		}
+		@media(max-width: 1199px){
+			margin-left: 20px;
+		}
+		@media(max-width: 767px){
+			margin-left: 18px;
 		}
 	}
+}
+.list-item +.list-item{
+	margin-top: 28px;
 }

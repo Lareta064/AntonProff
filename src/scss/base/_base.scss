@@ -27,7 +27,20 @@
   .noscroll {
 	overflow: hidden;
   }
-  
+  .overlay-block{
+	position: relative;	
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		background: linear-gradient(0deg, rgba(0, 99, 255, 0.83), rgba(0, 99, 255, 0.83));
+		mix-blend-mode: normal;
+	}
+}
   .container {
 	width: 1300px;
 	margin-left: auto;

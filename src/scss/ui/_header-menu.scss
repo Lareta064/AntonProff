@@ -1,9 +1,8 @@
 .header-menu {
 	position: fixed;
 	top: 60px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 1300px;
+	left: 0;
+	right: 0;
 	z-index: 2;
 	display: block;
 	
@@ -64,4 +63,11 @@
 }
 .header-menu  ul li:hover a{
 	color:$yellow
+}
+.header-menu.fixed{
+	top: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: $blue;
+	z-index: 50;
 }
