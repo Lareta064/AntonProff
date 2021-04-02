@@ -1,0 +1,30 @@
+.results{
+	padding-top: 112px;
+	padding-bottom: 135px;
+}
+.results-title{
+	margin-bottom: 65px;
+}
+.results-content {
+	display: flex;
+	justify-content: space-between;
+	@media(max-width:991px){
+		flex-direction: column-reverse;
+	}
+}
+.results-img{width: 49%;}
+.results-text{
+	width: 49%;
+}
+@media(max-width:991px){
+	.results-img{
+		width: 100%;
+		max-width:500px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.results-text{
+		width: 100%;
+	}
+}

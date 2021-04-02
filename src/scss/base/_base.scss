@@ -167,9 +167,26 @@ color: #2E7FFF;
 	}
 }
 .text-blue{color: $blue;}
+.text-bold{font-weight: 700;}
 .mt-44{
 	margin-top: 44px;
 	@media(max-width:767px){
 		margin-top: 34px;
+	}
+}
+.modal-btn.visible-desk {
+	display: block;
+	@media(max-width: 767px){
+		display: none;
+	}
+}
+.modal-btn.visible-mob {
+	display: none;
+	@media(max-width: 767px){
+		display: block;
+		margin-left: auto;
+		display: flex;
+		justify-content: center;
+		margin-top: 80px;
 	}
 }
