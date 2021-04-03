@@ -13,7 +13,7 @@ $(document).ready(function(){
 					mobMenu.classList.remove('active');
 					bodyEl.classList.remove('noscroll');
 					
-					for (let item of mobMenuItem) {		
+					for (let item of mobMenuItem) {						
 						item.classList.remove('animate');
 					}
 

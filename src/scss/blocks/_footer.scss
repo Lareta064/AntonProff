@@ -1,0 +1,17 @@
+li a{
+	display: inline;
+	color: $text;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	background-repeat: no-repeat;
+	background-position: center bottom 2px;
+	background-size: 100% 2px;
+	background-image: linear-gradient(to right, transparent, transparent);
+	transition: .5s;
+}
+li:hover a{
+	background-image: linear-gradient(to right, $yellow, $yellow);
+	color: $blue;
+}
