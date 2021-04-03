@@ -1,0 +1,17 @@
+.docs-content {display: flex;}
+.docs-content-right{
+	width: 65%;
+	.slick-slide{padding: 30px;	opacity: .6; transition: .5s;}
+	.slick-center{
+		padding:0;
+		opacity: 1;
+	}
+}
+.docs-content-left{
+	width: 35%;
+}
+.doc-item{
+	width: 350px;
+	padding: 30px;
+	outline:none;
+}
