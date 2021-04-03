@@ -1,16 +1,17 @@
-section.programms 
+section.programms#programms
+	.decor-number #[span 02.]
 	.container
 		.programms-title
 			h2.title-2 Наши программы
 		.programms-content.flex-wrapper
 			.programms-list
-				+list-icon([
-					{mix: 'pr1', text1: 'Обучение рабочим специальностям', text2:'от 2900 рублей'},
-					{mix: 'pr1', text1: 'Электробезопасность', text2:'от 4100 рублей'},
-					{mix: 'pr1', text1: 'Профессиональная переподготовка', text2:'от 11400 рублей'},
-					{mix: 'pr1', text1: 'Сертификация ISO', text2:'от 9400 рублей'},
-					{mix: 'pr1', text1: 'Повышение квалификации', text2:'от 4000 рублей'},
+				+list-icon2([
+					{img: 'prog1', imgWidth: 30, text1: 'Обучение рабочим специальностям', text2:'от 2900 рублей'},
+					{img: 'prog2', imgWidth: 40, text1: 'Электробезопасность', text2:'от 4100 рублей'},
+					{img: 'prog3', imgWidth: 50, text1: 'Профессиональная переподготовка', text2:'от 11400 рублей'},
+					{img: 'prog4', imgWidth: 42, text1: 'Сертификация ISO', text2:'от 9400 рублей'},
+					{img: 'prog5', imgWidth: 43, text1: 'Повышение квалификации', text2:'от 4000 рублей'},
 					])
 			.programms-img
 				.programms-img__item
-					+prImg
+					img(src="img/home/progImg.png", width="796" alt="img")

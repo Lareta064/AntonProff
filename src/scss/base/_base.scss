@@ -24,6 +24,39 @@
 		font-size: 16px;
 	}
   }
+  #overlay{
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: rgba(0,0,0, .5);
+	  z-index: 10;
+	  display: none;
+	  &.active{display: block;}
+  }
+section{position: relative;}
+.decor-number{
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  bottom: 0;
+	  width: 193px;
+	  border-right:3px solid #f5f5f5;
+	  z-index: 5;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  span{
+		  
+		font-family: $ffm;
+		font-weight: bold;
+		font-size: 27px;
+		line-height: 33px;
+		color: #97BFFF;
+	  }
+	
+  }
   .noscroll {
 	overflow: hidden;
   }
@@ -39,6 +72,7 @@
 		background-color: #fff;
 		background: linear-gradient(0deg, rgba(0, 99, 255, 0.83), rgba(0, 99, 255, 0.83));
 		mix-blend-mode: normal;
+		z-index: 5;
 	}
 }
   .container {

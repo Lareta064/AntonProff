@@ -5,6 +5,7 @@
 	right: 0;
 	z-index: 2;
 	display: block;
+	transition: .3s;
 	
 	ul{
 		display: flex;
@@ -66,8 +67,11 @@
 }
 .header-menu.fixed{
 	top: 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: $blue;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color:rgba(46, 127, 255, .95) ;
 	z-index: 50;
+	@media(max-width:1199px){
+		padding-top: 70px;
+	}
 }
