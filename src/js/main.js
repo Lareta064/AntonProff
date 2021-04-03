@@ -46,6 +46,15 @@ $(document).ready(function(){
 			});
 		}
 	}
+	//fix header
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 60){
+			$('.header-menu ').addClass('fixed');
 
+		}
+		else{
+			$('.header-menu ').removeClass('fixed');
+		}
+	})
 
 })

@@ -11,11 +11,16 @@
 		align-items:center;
 		border:1px solid transparent;
 		@media(max-width: 991px){
-			width: 50px;
-			height: 50px;
-			// svg{
-			// 	transform: scale(0.7);
-			// }
+			width: 62px;
+			height: 62px;
+			img{
+				transform: scale(0.7);
+			 }
+		}
+		@media(max-width: 479px){
+			width: 52px;
+			height: 52px;
+			
 		}
 	}
 	.list-item__text{
@@ -54,6 +59,9 @@
 		line-height: 1.45;
 		padding-left: 30px;
 		color: $blue;
+		@media#{$xs}{
+			padding-left: 0;
+		}
 		&+li{
 			margin-top: 24px;
 		}
@@ -62,11 +70,15 @@
 	li:after{
 		content:'';
 		position: absolute;
-		top: 8px;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 0;
 		width: 10px;
 		height: 10px;
 		background-color: $blue;
 		border-radius: 50%;
+		@media#{$xs}{
+			display: none;
+		}
 	}
 }

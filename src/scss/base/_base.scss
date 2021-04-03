@@ -36,6 +36,66 @@
 	  &.active{display: block;}
   }
 section{position: relative;}
+.p-130{
+	padding-top: 190px;
+	padding-bottom: 190px;
+	@media(max-width:1364px){
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+	@media(max-width:1279px){
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@media(max-width:767px){
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@media(max-width:479px){
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+.pt-130{
+	padding-top: 190px;
+	
+	@media(max-width:1364px){
+		padding-top: 130px;
+		
+	}
+	@media(max-width:1279px){
+		padding-top: 120px;
+		
+	}
+	@media(max-width:767px){
+		padding-top: 100px;
+		
+	}
+	@media(max-width:479px){
+		padding-top: 80px;
+		
+	}
+}
+.pb-130{
+	
+	padding-bottom: 190px;
+	@media(max-width:1364px){
+		
+		padding-bottom: 130px;
+	}
+	@media(max-width:1279px){
+		
+		padding-bottom: 120px;
+	}
+	@media(max-width:767px){
+		
+		padding-bottom: 100px;
+	}
+	@media(max-width:479px){
+		
+		padding-bottom: 80px;
+	}
+}
 .decor-number{
 	  position: absolute;
 	  left: 0;
@@ -54,6 +114,9 @@ section{position: relative;}
 		font-size: 27px;
 		line-height: 33px;
 		color: #97BFFF;
+	  }
+	  @media(max-width:1919px){
+		  display: none;
 	  }
 	
   }
@@ -93,7 +156,10 @@ section{position: relative;}
 		width: 540px;
 	}
 	@media(max-width:579px){
-		width: 290px;
+		width: 100%;
+		max-width:510px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	
   }
@@ -179,6 +245,28 @@ section{position: relative;}
 	text-shadow: none;
 	font-weight: 700;
 }
+
+.section-title {
+	@media#{$lg}{
+		text-align: center;
+		margin-bottom: 50px!important;
+		.title-2{
+			font-size: 50px;
+		}
+	}
+	@media#{$sm}{
+		margin-bottom: 56px!important;
+		.title-2{
+			font-size: 36px;
+		}
+	}
+	@media#{$xs}{
+		margin-bottom: 46px!important;
+		.title-2{
+			font-size: 26px;
+		}
+	}
+}
 .title-4{
 	font-family: $ffr;
 font-weight: 700;
@@ -190,14 +278,14 @@ color: #2E7FFF;
 .text-26{
 	font-size: 26px;
 	line-height: 1.19;
-	@media(max-width:1199px){
-		font-size: 24px;
-	}
-	@media(max-width:991px){
-		font-size: 22px;
+	@media(max-width:1364px){
+		font-size: 21px;
 	}
 	@media(max-width:767px){
 		font-size: 18px;
+	}
+	@media(max-width:767px){
+		font-size: 16px;
 	}
 }
 .text-blue{color: $blue;}
@@ -210,13 +298,13 @@ color: #2E7FFF;
 }
 .modal-btn.visible-desk {
 	display: block;
-	@media(max-width: 767px){
+	@media(max-width: 479px){
 		display: none;
 	}
 }
 .modal-btn.visible-mob {
 	display: none;
-	@media(max-width: 767px){
+	@media(max-width: 479px){
 		display: block;
 		margin-left: auto;
 		display: flex;

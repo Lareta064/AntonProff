@@ -18,12 +18,15 @@
 		.form-item + .form-item{margin-left: 35px;}
 		@media(max-width: 991px){
 			justify-content: center;
+			flex-direction: column;
+			.form-item + .form-item{margin-left: 0;}
+			.form-item + .form-item{margin-top: 20px;}
 		}
 	}
 }
 .form-btn{
 	a{margin-left: 35px;}
-	@media(max-width:767px){
+	@media(max-width:991px){
 		&.form-row{
 			flex-direction: column;
 			a{margin-left: 0; margin-top: 20px;}

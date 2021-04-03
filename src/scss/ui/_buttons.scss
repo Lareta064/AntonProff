@@ -17,17 +17,24 @@
 	}
 }
 .button--light{
-	border: 2px solid #fff;
+	border: 3px solid #fff;
 	line-height: 66px;
 	@media(max-width:767px){
 	
 		line-height: 56px;
 	}
 }
+.button--light:hover{
+	border: 3px solid #FCCC20;
+}
+
 .button--color{
 	background: linear-gradient(90deg, #F8CE38 -8.98%, #FFCB13 116.21%);
 	
 }
-.button:hover{
-	background: linear-gradient(90deg, #2E7FFF -8.98%, #629FFF 116.21%);
+.button--color:hover{
+	background: linear-gradient(90deg, #FFDC5E -8.98%, #FFD336 116.21%);
 }
+// .button--color:focus{
+// 	background: #EDC432;
+// }

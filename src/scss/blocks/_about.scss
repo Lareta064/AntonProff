@@ -1,6 +1,5 @@
 .about{
-	padding-top: 135px;
-	padding-bottom: 145px;
+	
 }
 .about-content {
 	display: flex;
@@ -19,24 +18,56 @@
 }
 .about-title{
 	margin-bottom: 82px;
+	@media#{$lg}{
+		
+		margin-bottom: 50px;
+		.title-2{
+			font-size: 50px;
+		}
+	}
+	@media#{$sm}{
+		margin-bottom: 56px;
+		.title-2{
+			font-size: 36px;
+		}
+	}
+	@media#{$xs}{
+		margin-bottom: 46px;
+		.title-2{
+			font-size: 26px;
+		}
+	}
 }
+
 .about-statistic {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 35px;
-	@media(max-width:767px){
-		flex-direction: column;
+	@media(max-width:479px){
+		flex-direction: row-reverse;
+		flex-wrap:wrap;
 	}
 }
 .statistic-item{
-	text-align: center;
-	width: 33%;
+	
+	width: 30%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	@media(max-width:767px){
-		width: 100%;
-		&+ .statistic-item{margin-top: 35px;}
+	
+	@media(max-width:479px){
+		
+		align-items: flex-start;
+		width: 49%;
+		&:first-child{
+			order:3;margin-right: auto;
+			// width:50%;
+		}
+		&:last-child{
+			order:1;
+			// width:40%;
+			
+		}
+		&:not(:first-child){margin-bottom: 35px;}
 	}
 	
 	p{
@@ -46,9 +77,15 @@
 		display: flex;
 		color: #2E7FFF;
 		text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
-		@media(max-width: 1199px){
+		@media(max-width: 1279px){
 			font-size: 50px;
 		}
+		@media(max-width: 767px){
+			font-size: 44px;
+		}
+	}
+	span{
+		color: rgba(46, 127, 255, 0.67);
 	}
 }
 @media(max-width: 991px){
@@ -56,11 +93,39 @@
 		flex-direction: column;
 	}
 	.about-content__left{
+		display: flex;
 		width: 100%;
 		max-width: 100%;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 60px;
+		// .modal-btn{
+		// 	button{width: 166px; font-size: 15px;}
+		// }
+		.about-title{margin-bottom: 0;}
 	}
 	.about-content__right{
 		width: 100%;
-		margin-top: 60px;
+	}
+}
+@media(max-width: 767px){
+	
+	.about-content__left{
+		
+		.modal-btn{
+			button{width: 166px; font-size: 15px;}
+		}
+		
+	}
+	
+}
+@media(max-width: 479px){
+	
+	.about-content__left{
+		margin-bottom: 47px;
+		display: block;
+	}
+	.about-content__right{
+		width: 100%;
 	}
 }

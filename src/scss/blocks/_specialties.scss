@@ -1,6 +1,75 @@
+.specialties{
+	background-color: #fbfbfb;
+}
 .specialte-list ul{
 	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	height: 475px;
+	height: 490px;
+	li:nth-child(8n+8) +li{margin-top: 0;}
+	@media#{$xl}{
+		height: 450px;
+	}
+	
+	@media(max-width:1199px){
+		height: 620px;
+		li:nth-child(8n+8) +li{margin-top: 30px;}
+		li:nth-child(11) +li{margin-top: 0;}
+	}
+	@media#{$sm}{
+		height: 570px;
+		
+	}
+	@media#{$xs}{
+		height: 590px;
+		li{
+			width: 47%;
+		}
+	}
+
+	li a{
+		display: inline;
+		color: $text;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 1.6;
+		letter-spacing: -0.01em;
+		background-repeat: no-repeat;
+		background-position: center bottom 2px;
+		background-size: 100% 2px;
+		background-image: linear-gradient(to right, transparent, transparent);
+		transition: .5s;
+		@media#{$xl}{
+			font-size: 20px;
+		}
+		@media#{$sm}{
+			font-size: 18px;
+		}
+		@media#{$xs}{
+			font-size: 16px;
+		}
+	}
+	li:hover a{
+		background-image: linear-gradient(to right, $yellow, $yellow);
+		color: $blue;
+	}
+	&+li{
+		margin-top: 22px;
+		@media#{$xl}{
+			margin-top: 30px;
+		}
+	}
+}
+.specialties-title {
+	margin-bottom: 100px;
+	@media#{$lg}{
+		margin-bottom: 70px;	
+	}
+	@media#{$sm}{
+		margin-bottom: 56px;	
+	}
+	@media#{$xs}{
+		margin-bottom: 47px;	
+	}
+	
 }
