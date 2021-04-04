@@ -1,22 +1,35 @@
-section#docs.docs.p-130 	
+//========== СЛАЙДЕР  ЛИЦЕНЗИИ ==========
+section#docs.docs.pt-130
+	.decor-number #[span 04.]	
 	.container 
 		.docs-content 
 			.docs-content-left 
-				#doc-left-arr 111
-				#doc-right-arr 222
-				.sl-count
-					span.sl-count__current 1
-					|  из 
-					span.sl-count__total
+				.docs-title
+					h2.title-2 Лицензии
+				.sl-controls
+					.sl-arrow#doc-left
+						+arrLeft
+					
+					.sl-count
+						span
+							span.sl-big 0
+							span.sl-big.sl-count__current 1
+						span /
+						span
+							span 0
+							span.sl-count__total
+
+					.sl-arrow#doc-right
+						+arrRight
 			.docs-content-right
-				.docs-slider 
-					.doc-item 
-						.doc-item__img 
+				.docs-slider.popup-gallery
+					.doc-item
+						a.fancy-item( href="img/slider/1.png") 
 							img(src="img/slider/1.png", width="315" alt="img")
-					.doc-item 
-						.doc-item__img 
-							img(src="img/slider/1.png", width="315" alt="img")
-					.doc-item 
-						.doc-item__img 
-							img(src="img/slider/1.png",width="315"  alt="img")
+					.doc-item
+						a.fancy-item( href="img/slider/2.png") 
+							img(src="img/slider/2.png", width="315" alt="img")
+					.doc-item
+						a.fancy-item( href="img/slider/3.png") 
+							img(src="img/slider/3.png",width="315"  alt="img")
 					
