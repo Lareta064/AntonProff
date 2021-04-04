@@ -27,3 +27,19 @@
 		width: 100%;
 	}
 }
+li .modal-link{
+	display: inline-block;
+	background-repeat: no-repeat;
+	cursor:pointer;
+		background-position: center bottom 2px;
+		background-size: 100% 2px;
+		// background-image: linear-gradient(to right, transparent, transparent);
+		background-image: linear-gradient(to right, $yellow, $yellow);
+			color: $blue;
+		transition: .5s;
+		&:hover{
+			background-image: linear-gradient(to right, $yellow, $yellow);
+			color: $blue;
+			
+		}
+}

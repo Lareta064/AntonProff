@@ -1,4 +1,19 @@
-.docs-content {display: flex;}
+.docs-content {
+	display: flex;
+	@media(max-width:1279px){
+		display: block;
+	}
+}
+.docs-title-mobile{
+	display: none;
+	@media(max-width:1279px){
+		display: block;
+		margin-bottom: 60px;
+		@media(max-width:767px){
+			margin-bottom: 42px;
+		}
+	}
+}
 .grad-block{
 	position: relative;
 	&:after, &:before{
@@ -25,7 +40,11 @@
 }
 .docs-content-right{
 	width: 65%;
-	.slick-slide{padding: 30px;	
+	@media(max-width:1279px){
+		width: 100%;
+	}
+	.slick-slide{
+		padding: 25px;	
 		opacity: .6; 
 		transition: .5s; 
 		display: flex;
@@ -42,6 +61,9 @@
 			height: 15px;
 			background-color: transparent;
 		}
+		@media(max-width:767px){
+			padding: 15px;
+		}
 	}
 	.slick-center{
 		transform:scale(1.1);
@@ -56,16 +78,25 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	@media(max-width:1279px){
+		display: none;
+	}
 }
 .docs-title{
 	margin-bottom: 52px;
 }
 .doc-item{
-	width: 350px;
+	max-width: 350px;
 	// padding: 15px;
 	outline:none;
 	display: flex;
 	justify-content: center;
+	@media(max-width:991px){
+		max-width:250px;
+	}
+	@media(max-width:767px){
+		max-width:160px;
+	}
 }
 .sl-controls{
 	display: flex;
