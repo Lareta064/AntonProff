@@ -9,9 +9,12 @@
 		border-bottom: 2px solid #fff;
 		height: 41px;
 		font-weight: 700;
+		color: #fff;
+		font-size: 18px;
 		&::placeholder{
 			font-weight: 700;
 			color: #fff;
+			font-size: 16px;
 		}
 	}
 	.form-row{

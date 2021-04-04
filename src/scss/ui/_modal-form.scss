@@ -48,14 +48,14 @@
 .modal__content {
 	position: relative;
 	width: 95%;
-	max-width:550px;
+	max-width:750px;
 	border-radius: 6px;
 	background-color: #fff;
 	animation-name:slowOpacity ;
 	animation-duration: .6s;
 	animation-fill-mode: forwards;
-	
-	padding: 60px;
+	padding: 80px;
+	@media(max-width:1279px){padding: 60px;}
 	@media(max-width:767px){
 		padding-left: 20px;
 		padding-right: 20px;
