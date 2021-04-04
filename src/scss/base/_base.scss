@@ -296,7 +296,22 @@ color: #2E7FFF;
 		font-size: 16px;
 	}
 }
+.text-24{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.45;
+	@media(max-width:1364px){
+		font-size: 21px;
+	}
+	@media(max-width:767px){
+		font-size: 18px;
+	}
+	@media(max-width:767px){
+		font-size: 16px;
+	}
+}
 .text-blue{color: $blue;}
+.text-white{color: white}
 .text-bold{font-weight: 700;}
 .mt-44{
 	margin-top: 44px;
