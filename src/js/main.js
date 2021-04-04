@@ -2,6 +2,7 @@ $(document).ready(function(){
 	/*===== HEADER GAMBURGER===========*/
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('.header-menu ');
+	const overlayEl = document.querySelector('#overlay');
 	const mobMenuItem = document.querySelectorAll('.header-menu li');
 	const bodyEl = document.body;
 
@@ -11,6 +12,7 @@ $(document).ready(function(){
 			if (this.classList.contains('active')) {
 				this.classList.remove('active');
 				mobMenu.classList.remove('active');
+				overlayEl.classList.remove('active');
 				bodyEl.classList.remove('noscroll');
 				
 				for (let item of mobMenuItem) {						
@@ -21,6 +23,7 @@ $(document).ready(function(){
 				this.classList.add('active');
 				mobMenu.classList.add('active');
 				bodyEl.classList.add('noscroll');
+				overlayEl.classList.add('active');
 				let delay = 0;
 				for (let item of mobMenuItem) {
 					setTimeout(function () {
@@ -33,8 +36,9 @@ $(document).ready(function(){
 		});
 		//resize window
 		window.addEventListener('resize', function () {
-			item.classList.remove('active');
+			menuToggle.classList.remove('active');
 			mobMenu.classList.remove('active');
+			overlayEl.classList.remove('active');
 			bodyEl.classList.remove('noscroll');
 			let delay = 0;
 			for (let item of mobMenuItem) {
@@ -49,7 +53,19 @@ $(document).ready(function(){
 			this.classList.remove('active');
 			// mobMenu.classList.remove('active');
 			bodyEl.classList.remove('noscroll');
-			menuToggle.classList.remove('active');	
+			menuToggle.classList.remove('active');
+			overlayEl.classList.remove('active');	
+			for (let item of mobMenuItem) {						
+				item.classList.remove('animate');
+			}
+		});
+		//click for overlay
+		overlayEl.addEventListener('click', function () {
+			this.classList.remove('active');
+			// mobMenu.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+			menuToggle.classList.remove('active');
+			mobMenu.classList.remove('active');	
 			for (let item of mobMenuItem) {						
 				item.classList.remove('animate');
 			}
