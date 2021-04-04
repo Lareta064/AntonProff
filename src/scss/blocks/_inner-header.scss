@@ -1,0 +1,35 @@
+/*======== INNER HEADER ========*/
+.header.header-inner{
+	align-items: center;
+}
+.inner-header-content{
+	position: relative;
+	z-index:5;
+}
+.inner-header-content 	.header-center__text {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 95px;
+	padding-bottom: 0;
+	.subtitle{max-width:100%}
+	@media(max-width:1364px){
+		margin-bottom: 85px;
+	}
+	@media(max-width:1199px){
+		margin-bottom: 50px;
+	}
+	@media(max-width:767px){
+		margin-bottom: 39px;
+	}
+}
+.inner-header-content .header-center__wrapper{
+	flex-direction: column;
+	align-items: center;
+}
+.inner-header-content .form-wrapper{
+	padding-top: 0;
+}
+.form-btn.item-center{
+	display: flex;
+	justify-content: center;
+}

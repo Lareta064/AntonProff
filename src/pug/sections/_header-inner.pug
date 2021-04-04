@@ -1,0 +1,31 @@
+//===========INNER HEADER ==========
+header.header.header-inner.overlay-block(style="background-image: url(img/headerBg/1.jpg)")
+	.header-menu
+		.container
+			+headerNav([
+				{link: 'index.html', text: 'Главная'},
+				{link: '#programms', text: 'Наши программы'},
+				{link: '#docs', text: 'Лицензии'},
+				{link: '#results', text: 'Документы по окончании'},
+				{link: '#specialties', text: 'Специальности'}
+			])
+	.menu-toggle
+		span
+	.inner-header-content
+		.container
+			.header-center__wrapper 	
+				.header-center__text 
+					h1.title-1 Получите удостоверение<br> электрика дистанционно
+					p.subtitle.text-26 Более 300 профессий. На сайте указаны самые популярные.
+				.form-wrapper 
+					p.form-title.text-26 Оформление удостоверения
+						
+					form.contact-form.mt-44
+						input(type="hidden" name="form_type" value="Форма из шапки сайта")
+						
+						.form-item 
+							input(type="text" placeholder="Имя" name="name" required)
+						.form-item 
+							input.phone(type="text" placeholder="Телефон" name="phone" required)
+						.form-btn.item-center.mt-44 
+							button(type="submit").button.button--color Оставить заявку
