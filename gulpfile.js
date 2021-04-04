@@ -89,7 +89,7 @@ gulp.task('groupmedia', function (callback) {
     return gulp.src('./build/css/main.css')
         .pipe(gcmq())
         .pipe(gulp.dest('./build/css/'));
-        //callback();
+        callback();
 });
 
 // Слежение за HTML и CSS и обновление браузера
@@ -104,9 +104,12 @@ gulp.task("watch", function() {
     watch("./src/scss/**/*.scss", function() {
         setTimeout(gulp.parallel("scss"), 500);
     });
-    watch("./build/css/**/*.css", function() {
-        setTimeout(gulp.parallel("groupmedia"), 500);
-    });
+
+    // РУСПУС ЗАКОМЕНТИЛ - Объединение медиазапросов
+    // watch("./build/css/**/*.css", function() {
+    //     setTimeout(gulp.parallel("groupmedia"), 500);
+    // });
+
     // Слежение за PUG и сборка
     watch("./src/pug/**/*.pug", gulp.parallel("pug"));
 
@@ -137,7 +140,7 @@ gulp.task(
     gulp.series(
         gulp.parallel("clean:build"),
         gulp.parallel("scss", "pug", "copy:img", "copy:js", "copy:fonts", "copy:libs"),
-        gulp.series("groupmedia"),
+        gulp.parallel("groupmedia"),
         gulp.parallel("server", "watch")
     )
 );

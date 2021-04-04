@@ -1,0 +1,41 @@
+.learning{
+}
+.learning-title{
+	margin-bottom: 90px;
+}
+.learning-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	@media(max-width:991px){
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media(max-width:767px){
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+}
+.learning-card{
+	max-width: 390px;
+	width: 32%;
+	text-align: center;
+	@media(max-width:991px){
+		width: 48%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	@media(max-width:767px){
+		width: 100%;
+		max-width:380px;
+	}
+}
+.learning-card__img{
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}

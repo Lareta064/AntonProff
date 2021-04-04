@@ -1,11 +1,11 @@
 .header-menu {
 	position: fixed;
 	top: 60px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 1300px;
-	z-index: 2;
+	left: 0;
+	right: 0;
+	z-index: 50;
 	display: block;
+	transition: .3s;
 	
 	ul{
 		display: flex;
@@ -64,4 +64,14 @@
 }
 .header-menu  ul li:hover a{
 	color:$yellow
+}
+.header-menu.fixed{
+	top: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color:rgba(46, 127, 255, .95) ;
+	z-index: 50;
+	@media(max-width:1199px){
+		padding-top: 70px;
+	}
 }

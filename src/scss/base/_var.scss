@@ -17,11 +17,16 @@ $sizes: ("md":767px, "lg":991px, "xl":1199px, "xxl": 1439px);
 // 		margin-right: 10px;
 // 	}
 // }
+$xs: '(max-width: 479px)';
+$sm: '(max-width: 767px)';
+$md: '(max-width: 991px)';
+$lg: '(max-width: 1279px)';
+$xl: '(max-width: 1364px)';
 
 $ffr:  'Raleway', sans-serif;
 $ffm: 'Montserrat', sans-serif;
 // color
-$blue: #2E7FFF ;
+$blue: rgb(46, 127, 255) ;
 $text: #3C3C3C;
 $yellow:#FFD336 ;
-$gam: #FFD336 ;
+$gam: rgb(46, 127, 255) ;

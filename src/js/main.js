@@ -13,7 +13,7 @@ $(document).ready(function(){
 					mobMenu.classList.remove('active');
 					bodyEl.classList.remove('noscroll');
 					
-					for (let item of mobMenuItem) {		
+					for (let item of mobMenuItem) {						
 						item.classList.remove('animate');
 					}
 
@@ -46,6 +46,53 @@ $(document).ready(function(){
 			});
 		}
 	}
+	//fix header
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 60){
+			$('.header-menu ').addClass('fixed');
 
+		}
+		else{
+			$('.header-menu ').removeClass('fixed');
+		}
+	})
+	// slider
+	var docLeftArrow = $('#doc-left');
+	var docRightArrow = $('#doc-right');
+	$('.docs-slider ').slick({
+		slidesToShow:1,
+		centerMode: true,
+		variableWidth: true,
+		infinite: true,
+		speed:1000,
+		nextArrow: docLeftArrow,
+		prevArrow: docRightArrow,
+		// centerPadding: '60px'
+
+	})
+	var slider = $('.docs-slider');
+	$('.sl-count__total').text( slider.slick("getSlick").slideCount);
+	$(".docs-slider").on('afterChange', function(event, slick, currentSlide){
+	     $(".sl-count__current").text(currentSlide + 1);
+	});
+
+	// fancybox
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}
+		}
+	});
 
 })
