@@ -1,0 +1,34 @@
+#connect{
+	.title-2{text-align: left;}
+	.results-content{
+		@media(max-width:991px){
+			flex-direction: column;
+			max-width:554px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+	}
+}
+#connect .results-text {
+	max-width: 605px;
+	.text-block{max-width: 505px;}
+	@media(max-width:991px){
+		
+			margin-top: 70px;
+		
+	}
+	@media(max-width:479px){
+		
+		margin-top: 40px;
+	
+}
+	
+}
+.text-block p{
+	font-size: 22px;
+	line-height: 1.62;
+	& +p{padding-top: .9em;}
+	@media(max-width:991px){font-size: 18px;}
+	@media(max-width:479px){font-size: 16px;}
+}

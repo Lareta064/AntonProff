@@ -12,9 +12,12 @@
 		flex-direction: column-reverse;
 	}
 }
-.results-img{width: 49%;}
+.results-img{
+	width: 47%;
+	@media(min-width: 1920px){width: 550%; margin-right: 88px;}
+}
 .results-text{
-	width: 49%;
+	width: 50%;
 }
 @media(max-width:991px){
 	.results-img{
@@ -29,10 +32,10 @@
 	}
 }
 li .modal-link{
-	display: inline-block;
+	display: inline;
 	background-repeat: no-repeat;
 	cursor:pointer;
-		background-position: center bottom 2px;
+		background-position: center bottom 0px;
 		background-size: 100% 2px;
 		// background-image: linear-gradient(to right, transparent, transparent);
 		background-image: linear-gradient(to right, $yellow, $yellow);

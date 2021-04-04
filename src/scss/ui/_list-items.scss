@@ -83,3 +83,20 @@
 		}
 	}
 }
+.programms-list.bull-list li{
+	
+	color: $text;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	@media#{$xl}{
+		font-size: 20px;
+	}
+	@media#{$sm}{
+		font-size: 18px;
+	}
+	@media#{$xs}{
+		font-size: 16px;
+	}
+}

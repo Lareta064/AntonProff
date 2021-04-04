@@ -1,0 +1,23 @@
+mixin innerSpec(num)
+	//========== СПЕЦИАЛЬНОСТИ ==========
+	section.specialties#specialties.p-130
+		.decor-number 
+			span #{num}.
+		.container 
+			.specialties-content
+				.specialties-title.section-title 
+					h2.title-2 Специальности
+				.bull-list.specialte-list
+					+bullList([
+						{link: 'onepage.html', text: 'Сварщик'},{link: '#', text: 'Повар'},
+						{link: '#', text: 'Оператор'},{link: '#', text: 'Лаборант'},
+						{link: '#', text: 'Сантехник'},{link: '#', text: 'Электрик'},
+						{link: '#', text: 'Монтажник'},{link: '#', text: 'Слесарь'},
+						{link: '#', text: 'Электромон&shy;тажник'},{link: '#', text: 'Составитель поездов'},
+						{link: '#', text: 'Монтер путей'},{link: '#', text: 'Бетонщик'},
+						{link: '#', text: 'Электромонтер'},{link: '#', text: 'Стропальщик'},
+						{link: '#', text: 'Машинист крана'},{link: '#', text: 'Лифтер'},
+						{link: '#', text: 'Машинист экскаватора'},{link: '#', text: 'Маляр'},
+						{link: '#', text: 'Кочегар'},{link: '#', text: 'Изолировщик'},
+						{link: '#', text: 'Бурильщик'},{link: '#', text: 'Дробильщик'}
+					])

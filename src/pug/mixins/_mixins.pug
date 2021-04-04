@@ -8,6 +8,10 @@ mixin bullList(arg)
 		each item in arg 
 			li 
 				a(href=""+item.link) !{item.text}
+mixin bullList2(...arg)
+	ul 
+		each item in arg 
+			li= item
 
 mixin list-icon(arg) 
 	ul 
