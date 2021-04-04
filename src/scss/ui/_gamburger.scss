@@ -3,11 +3,11 @@
 	display: none;
 	z-index: 100;
 	cursor:pointer;
-	width: 30px;
-	height: 25px;
-	
+	width: 40px;
+	height: 35px;
+	border:3px solid $yellow;
 	position: relative;
-	margin-left: 40px;
+	// margin-left: 40px;
 	@media(max-width:1199px) {
 		display: flex;
 
@@ -17,7 +17,7 @@
 		position: relative;
 		display: block;
 		margin: auto;
-		width: 30px;
+		width: 25px;
 		height: 2px;
 		background-color: $gam;
 		transition: .3s;
@@ -32,15 +32,17 @@
 		height: 2px;
 		background-color: $gam;
 		right: 0;
-		transition: .3s;
+		transition: top .3s, transform .5s;
 	}
 
 	span:after {
-		top: -10px;
+		top: -8px;
+		transition: top .3s, transform .5s;
 	}
 
 	span:before {
-		bottom: -10px;
+		bottom: -8px;
+		transition: bottom .3s, transform .5s;
 	}
 }
 .menu-toggle.active {
