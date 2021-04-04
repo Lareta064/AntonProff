@@ -1,0 +1,14 @@
+.modal-wrapper(data-modal="modal-form")
+	.modal-overlay
+	.modal__content.modal__content--form
+		button.modal-close
+			span +
+
+		form.contact-form
+			input(type="hidden" name="form_type" value="Форма из модального окна")
+			.form-item
+				input(type="text" placeholder="Имя" name="name" required)
+			.form-item
+				input.phone(type="text" placeholder="Телефон" name="phone" required)
+			.form-row.form-btn.mt-44
+				button(type="submit").button.button--light Оставить заявку

@@ -119,5 +119,40 @@ $(document).ready(function(){
 			}
 		}
 	});
-
+	//modal
+	const modalTarget = document.querySelectorAll('[data-target="modal"]');
+	const modalWrapper = document.querySelectorAll('.modal-wrapper');
+	
+	if(modalTarget){
+		const modalWrapper = document.querySelectorAll('.modal-wrapper');
+		for(let item of modalTarget){
+			
+			item.addEventListener('click', function(){
+				const itemTarget = item.getAttribute('data-modal');
+				for(let modal of modalWrapper){
+					const modalData = modal.getAttribute('data-modal');
+					if( modalData == itemTarget){
+						modal.classList.add('show-modal');
+					}
+				}
+				
+			})
+		}
+	}
+	
+	if(modalWrapper){
+		// function closeModal(modalItem){
+		// 	modalItem.classList.remove('visible-modal');
+		// }
+		for(let item of modalWrapper){
+			const closeModalBtn = item.querySelector('.modal-close');
+			const modalOverlay = item.querySelector('.modal-overlay');
+			closeModalBtn.addEventListener('click', function(){
+				item.classList.remove('show-modal');
+			});
+			modalOverlay.addEventListener('click', function(){
+				item.classList.remove('show-modal');
+			})
+		}
+	}
 })
