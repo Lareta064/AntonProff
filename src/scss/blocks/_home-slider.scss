@@ -52,7 +52,8 @@
 		justify-content: center;
 		transform:scale(1);
 		outline:none;
-		a{position: relative;}
+		a{position: relative;
+		&:focus{outline:none}}
 		a:after{
 			content:'';
 			position: absolute;
