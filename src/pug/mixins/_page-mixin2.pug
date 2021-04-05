@@ -1,0 +1,11 @@
+mixin onePage2(arg)
+	+innerHeader(arg.img, arg.title)
+	+progList(arg.prog)
+	+docSlider('03')
+	+innerResults('04')
+	+innerLearn('05')
+		include ../sections/_preferance.pug
+	include ../sections/_connect.pug
+	+innerSpec('07')
+	include ../sections/_footer
+	include ../sections/_modal-form
