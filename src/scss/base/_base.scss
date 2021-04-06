@@ -243,6 +243,22 @@ section{position: relative;}
 		font-size: 26px;
 	}
   }
+  .title-2--small{
+	@media(min-width:1365px){
+		font-size: 60px;
+	} 
+  }
+.title-1 span{
+	display: block;
+	@media(max-width:767px){
+		font-size: 22px;
+	}
+}
+header .form-title{
+	@media(max-width:767px){
+		text-align: center;
+	}
+}
 .title-2{
 	color: $blue;
 	text-shadow: none;
@@ -253,6 +269,12 @@ section{position: relative;}
 	font-size: 32px;
 	line-height: 1.45;
 	color: #2E7FFF;
+	@media(max-width:1199px){
+		font-size: 28px;
+	}
+	@media(max-width:479px){
+		font-size: 24px;
+	}
 }
 .section-title {
 	@media#{$lg}{

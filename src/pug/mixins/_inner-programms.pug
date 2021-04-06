@@ -6,11 +6,11 @@ mixin progList(arg)
 				h2.title-2 Обучение от 2-го разряда и&nbsp;выше
 			.inner-programms-content 
 				.inner-programms-left
-					.scroll-wrapper 
+					.scroll-wrapper#scrollWrapper 
 						.arrDown &darr;
 						.programms-list.bull-list
 							h3.title-3 Наши программы 
-							ul 
+							ul#programms-list-inner 
 								each item in arg 
 									li #{item}
 							//- +bullList2('Электросварщик','Газоэлектросварщик','Электросварщик ручной сварки', 'Электросварщик-аргонщик', 'Газорезчик', 'Нагревальщик (сварщик) металла','Сварщик арматурных сеток')

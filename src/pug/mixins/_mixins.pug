@@ -1,8 +1,15 @@
+//menu с подменю
 mixin headerNav(arg)
 	ul 
-		each item in arg 
+		each item in arg
 			li 
-				a(href=""+item.link) #{item.text}
+				a(href=""+item.link) !{item.text}
+				if item.submenu
+					.submenu-wrapper 
+						nav 
+							each subitem in item.submenu
+								a.border-grad(href=""+ subitem.sublink)  !{subitem.title}
+
 mixin bullList(arg)
 	ul 
 		each item in arg 

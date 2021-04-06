@@ -20,25 +20,18 @@ header.header.overlay-block
 					h1.title-1 Дистанционное<br> обучение рабочим<br> специальностям
 					p.subtitle.text-26 Более 300 профессий. На сайте указаны самые популярные.
 				
-					.form-wrapper 
-						p.form-title.text-26 Узнайте о выбранной вами специальности
-							
-						form.contact-form.mt-44
+					.form-wrapper
+						form.contact-form
+							p.form-title.text-26 Узнайте о выбранной вами специальности
 							input(type="hidden" name="form_type" value="Форма из шапки сайта")
-							.form-row
+							.form-row.mt-44
 								.form-item 
 									input(type="text" placeholder="Имя" name="name" required)
 								.form-item 
 									input.phone(type="text" placeholder="Телефон" name="phone" required)
 							.form-row.form-btn.mt-44 
 								button(type="submit").button.button--light Оставить заявку
-								a(href="#!").button.button--color Специальности
+								a(href="#specialties").button.button--color Специальности
+						.answer
 				.header-center__img 
 					img(src="img/home/men.png", alt="image")
-
-		//- h1.title-1 title-1
-		//- a(href="#!").button.button--light Смотреть
-		//- button.button.button--color Смотреть
-		//-poop
-		
-		

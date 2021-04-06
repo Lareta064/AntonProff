@@ -10,20 +10,22 @@
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 70px;
 	}
 	.contact-form{
 		max-width:900px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 70px;
+		
 	}
 }
 .preference-content{
 	position: relative;
-	z-index: 5;
+	z-index: 7;
 	text-align: center;
 	.title-2{
 		margin-bottom: 25px;
+		color: #fff;
 	}
 }
 .contact-form-horizontal.contact-form{

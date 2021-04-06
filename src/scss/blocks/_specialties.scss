@@ -74,3 +74,13 @@
 	}
 	
 }
+.border-grad{
+	display: inline!important;
+	width: fit-content;
+	background-repeat: no-repeat;
+	background-position: center bottom 2px;
+	background-size: 0 2px;
+	background-image: linear-gradient(to right, transparent, transparent);
+	transition: .5s;
+	&:hover{background-image: linear-gradient(to right, $yellow, $yellow); background-size: 100% 2px;}
+}

@@ -7,25 +7,48 @@ mixin innerHeader(imgSrc, title)
 					{link: '#programms', text: 'Наши программы'},
 					{link: '#docs', text: 'Лицензии'},
 					{link: '#results', text: 'Документы по окончании'},
-					{link: '#specialties', text: 'Специальности'}
+					{link: '#specialties', text: 'Специальности',
+					 submenu:[
+						{sublink: 'cvarshik.html', title: 'Сварщик'},
+						{sublink: 'povar.html', title: 'Повар'},
+						{sublink: 'operator.html', title: 'Оператор'},
+						{sublink: 'laborant.html', title: 'Лаборант'},
+						{sublink: 'santechnik.html', title: 'Сантехник'},
+						{sublink: 'elektrik.html', title: 'Электрик'},
+						{sublink: 'montagnik.html', title: 'Монтажник'},
+						{sublink: 'slesar.html', title: 'Слесарь'},
+						{sublink: 'elmontagnik.html', title: 'Электромон&shy;тажник'},
+						{sublink: 'sostavitel.html', title: 'Составитель поездов'},
+						{sublink: 'monterputey.html', title: 'Монтер путей'},
+						{sublink: 'betonshik.html', title: 'Бетонщик'},
+						{sublink: 'elektromonter.html', title: 'Электромонтер'},
+						{sublink: 'stropalshik.html', title: 'Стропальщик'},
+						{sublink: 'mashinistkrana.html', title: 'Машинист крана'},
+						{sublink: 'lifter.html', title: 'Лифтер'},
+						{sublink: 'mashinistekckovatora.html', title: 'Машинист экскаватора'},
+						{sublink: 'malyar.html', title: 'Маляр'},
+						{sublink: 'kochegar.html', title: 'Кочегар'},
+						{sublink: 'izolirovshik.html', title: 'Изолировщик'},
+						{sublink: 'burilshik.html', title: 'Бурильщик'},
+						{sublink: 'drobilshik.html', title: 'Дробильщик'}
+						 ]}
 				])
 		.menu-toggle
 			span
 		.inner-header-content
 			.container
-				.header-center__wrapper 	
-					.header-center__text 
-						h1.title-1 !{title}
+				.header-center__wrapper
+					.header-center__text
+						h1.title-1 !{title}!
+							span от 2 разряда и выше
 						p.subtitle.text-26 Более 300 профессий. На сайте указаны самые популярные.
-					.form-wrapper 
-						p.form-title.text-26 Оформление удостоверения
-							
-						form.contact-form.mt-44
-							input(type="hidden" name="form_type" value="Форма из шапки сайта")
-							
-							.form-item 
+					.form-wrapper
+						form.contact-form
+							p.form-title.text-26 Оперативное оформление официального удостоверения	
+							.form-item.mt-44 
 								input(type="text" placeholder="Имя" name="name" required)
 							.form-item 
 								input.phone(type="text" placeholder="Телефон" name="phone" required)
 							.form-btn.item-center.mt-44 
 								button(type="submit").button.button--color Оставить заявку
+						.answer

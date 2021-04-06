@@ -93,8 +93,10 @@
 	text-transform: uppercase;
 	@media#{$sm}{
 		font-size: 14px;
+		&+li{margin-top: 18px;}
 	}
 	@media#{$xs}{
 		font-size: 13px;
+		&+li{margin-top: 16px;}
 	}
 }

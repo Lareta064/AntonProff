@@ -4,8 +4,9 @@
 	align-items: flex-end;
 	justify-content: center;
 	background-color: $blue;
-	min-height: 100vh;
-	padding-top: 60px;
+	height: 100vh;
+	max-height:950px;
+	padding-top: 40px;
 	background-image: url('../img/home/headerBg.jpg');
 	position: relative;
 	background-size: cover;

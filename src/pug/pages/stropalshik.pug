@@ -1,7 +1,11 @@
 extends ../layouts/layout.pug
 
 block content
-	+onePage({img:'stropalshik', title:'Получите удостоверение<br> стропальщика дистанционно'})
+	+onePage2({img:'stropalshik', title:'Получите удостоверение<br> стропальщика дистанционно', prog:[
+		'Стропальщик 2-ГО РАЗРЯДА',
+		'Стропальщик 3-ГО РАЗРЯДА',
+		'Стропальщик 4-ГО РАЗРЯДА',
+		'Стропальщик 5-ГО РАЗРЯДА'	]})
 	
 block variables
 	-var title = "Стропальщик";

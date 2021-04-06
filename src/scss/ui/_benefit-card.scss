@@ -10,7 +10,7 @@
 	box-shadow: 0px 0px 27px rgba(46, 84, 142, 0.1);
 	transition: .3s;
 	border: 5px solid transparent;
-	&:hover{border: 5px solid $blue;}
+	// &:hover{border: 5px solid $blue;}
 	@media(max-width:991px){
 		width: 350px;
 		margin-bottom: 30px;
