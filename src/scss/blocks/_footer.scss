@@ -2,7 +2,7 @@
 .footer{
 	padding-top: 75px;
 	padding-bottom: 75px;
-	background: linear-gradient(0deg, #2E7FFF, #2E7FFF), #C4C4C4;
+	background-color: #fbfbfb;
 	@media(max-width:1199px){
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -38,7 +38,7 @@
 		display: flex;
 		justify-content: space-between;
 		a{
-			color: #FFFFFF;
+			color: $blue;
 			text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
 			font-weight: 700 ;
 		}
@@ -93,7 +93,7 @@
 		font-weight: 600;
 		font-size: 22px;
 		line-height: 26px;
-		color: #FFFFFF;
+		color: $blue;
 		text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
 		white-space: nowrap;
 		@media(max-width:1364px){

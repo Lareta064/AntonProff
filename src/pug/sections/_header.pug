@@ -3,13 +3,36 @@ header.header.overlay-block
 	.header-menu
 		.container
 			+headerNav([
-				{link: '#programms', text: 'Наши программы'},
-				{link: '#benefits', text: 'Преимущества'},
-				{link: '#about', text: 'О нас'},
-				{link: '#docs', text: 'Лицензии'},
-				{link: '#specialties', text: 'Специальности'},
-				{link: '#results', text: 'Документы по окончании'}
-			])
+					{link: 'index.html', text: 'Главная'},
+					{link: '#programms', text: 'Наши программы'},
+					{link: '#docs', text: 'Лицензии'},
+					{link: '#results', text: 'Документы по окончании'},
+					{link: '#specialties', text: 'Специальности',
+					 submenu:[
+						{sublink: 'cvarshik.html', title: 'Сварщик'},
+						{sublink: 'povar.html', title: 'Повар'},
+						{sublink: 'operator.html', title: 'Оператор'},
+						{sublink: 'laborant.html', title: 'Лаборант'},
+						{sublink: 'santechnik.html', title: 'Сантехник'},
+						{sublink: 'elektrik.html', title: 'Электрик'},
+						{sublink: 'montagnik.html', title: 'Монтажник'},
+						{sublink: 'slesar.html', title: 'Слесарь'},
+						{sublink: 'elmontagnik.html', title: 'Электромон&shy;тажник'},
+						{sublink: 'sostavitel.html', title: 'Составитель поездов'},
+						{sublink: 'monterputey.html', title: 'Монтер путей'},
+						{sublink: 'betonshik.html', title: 'Бетонщик'},
+						{sublink: 'elektromonter.html', title: 'Электромонтер'},
+						{sublink: 'stropalshik.html', title: 'Стропальщик'},
+						{sublink: 'mashinistkrana.html', title: 'Машинист крана'},
+						{sublink: 'lifter.html', title: 'Лифтер'},
+						{sublink: 'mashinistekckovatora.html', title: 'Машинист экскаватора'},
+						{sublink: 'malyar.html', title: 'Маляр'},
+						{sublink: 'kochegar.html', title: 'Кочегар'},
+						{sublink: 'izolirovshik.html', title: 'Изолировщик'},
+						{sublink: 'burilshik.html', title: 'Бурильщик'},
+						{sublink: 'drobilshik.html', title: 'Дробильщик'}
+						 ]}
+				])
 	.menu-toggle
 		span
 	// header-content

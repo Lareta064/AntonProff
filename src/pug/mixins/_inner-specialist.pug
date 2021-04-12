@@ -1,13 +1,13 @@
 mixin innerSpec(num)
 	//========== СПЕЦИАЛЬНОСТИ ==========
-	section.specialties#specialties.p-130
+	section.specialties#specialties.pt-130
 		.decor-number 
 			span #{num}.
 		.container 
 			.specialties-content
 				.specialties-title.section-title 
 					h2.title-2 Специальности
-				.bull-list.specialte-list
+				.bull-list.specialte-list.pb-130
 					+bullList([
 					{link: 'cvarshik.html', text: 'Сварщик'},{link: 'povar.html', text: 'Повар'},
 					{link: 'operator.html', text: 'Оператор'},{link: 'laborant.html', text: 'Лаборант'},
@@ -21,3 +21,17 @@ mixin innerSpec(num)
 					{link: 'kochegar.html', text: 'Кочегар'},{link: 'izolirovshik.html', text: 'Изолировщик'},
 					{link: 'burilshik.html', text: 'Бурильщик'},{link: 'drobilshik.html', text: 'Дробильщик'}
 				])
+		.preference.overlay-block
+			.container
+				.preference-content
+					h2.title-2.title-2--small.text-white ЗАКАЖИТЕ ОБУЧЕНИЕ ПРЯМО СЕЙЧАС И ТОЛЬКО ДЛЯ ВАС МЫ СДЕЛАЕМ<br>
+						span СКИДКУ 1&nbsp;300&nbsp;РУБ.
+					form.contact-form.contact-form-horizontal.mt-44
+						.form-row
+							.form-item
+								input(type="text" placeholder="Имя" name="name" required)
+							.form-item 
+								input.phone(type="text" placeholder="Телефон" name="phone" required)
+							.form-item
+								button(type="submit").button.button--color Оставить заявку
+					.answer
