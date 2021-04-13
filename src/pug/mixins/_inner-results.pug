@@ -1,0 +1,21 @@
+mixin innerResults(num)
+	//========== ПО ОКОНЧАНИИ ОБУЧЕНИЯ  ==========
+	section.results.pt-130#results
+		.decor-number #[span #{num}.]
+		.container
+			.results-content 
+				.results-img
+					+resultsImg 
+				.results-text 
+					.results-title.section-title 
+						h2.title-2 Документы по&nbsp;окончании обучения
+					.bull-list 
+						ul 
+							li Удостоверение установленного образца, соответствующее требованиям Российского законодательства
+							li Протокол аттестационной комиссии
+							li Свидетельство о присвоении специальности
+							li Журнал с отметкой Ростехнадзора
+							li Копия уставных документов образовательного 
+						//- li
+						//- 	span.modal-link Копия уставных документов образовательного центра
+

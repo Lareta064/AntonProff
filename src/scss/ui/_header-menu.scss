@@ -1,3 +1,4 @@
+/*======== HEADER MENU ========*/
 .header-menu {
 	position: fixed;
 	top: 60px;
@@ -64,6 +65,59 @@
 }
 .header-menu  ul li:hover a{
 	color:$yellow
+}
+.header-menu  ul li:hover{
+	.submenu-wrapper nav a{
+		color: $blue;
+		&:hover{
+			color: $blue;
+		}
+	}	
+}
+
+.header-menu li{
+	position: relative;
+	&:hover .header-menu .submenu-wrapper{height:550px;}
+}
+.header-menu .submenu-wrapper{
+	position: absolute;
+	width: 700px;
+	height: 380px;
+	height: 0;
+	padding-top: 15px;
+	transition: opacity .5s;
+	opacity: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	z-index: 7;
+	overflow: hidden;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+	@media(max-width:1199px){display: none;}
+	a{
+		color: $blue;
+		font-weight: 600;
+		padding: 3px 5px;
+		margin-bottom: 7px;
+	}
+	
+}
+.header-menu li{
+	position: relative;
+	&:hover .submenu-wrapper{
+		height:550px; 
+		opacity: 1;
+	}
+}
+.submenu-wrapper nav{
+	border-radius: 6px;
+	background-color: #fff;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-between;
+	flex-wrap: wrap;
+	height: 100%;
 }
 .header-menu.fixed{
 	top: 0;

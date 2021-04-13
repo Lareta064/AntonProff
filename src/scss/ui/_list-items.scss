@@ -1,3 +1,4 @@
+/*======== UI-LIST ========*/
 .list-item {
 	display: flex;
 	.list-item__icon{
@@ -80,5 +81,22 @@
 		@media#{$xs}{
 			display: none;
 		}
+	}
+}
+.programms-list.bull-list li{
+	
+	color: $text;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	text-transform: uppercase;
+	@media#{$sm}{
+		font-size: 14px;
+		&+li{margin-top: 18px;}
+	}
+	@media#{$xs}{
+		font-size: 13px;
+		&+li{margin-top: 16px;}
 	}
 }

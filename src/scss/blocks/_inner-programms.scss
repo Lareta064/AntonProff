@@ -1,0 +1,129 @@
+.inner-programms-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.title-3{
+		margin-bottom: 37px;
+	}
+	@media(max-width:1279px){
+		flex-direction: column;
+		max-width:535px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.inner-programms-title {
+	margin-bottom: 105px;
+	@media(max-width:1279px){
+		margin-bottom: 60px;
+		max-width:535px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.scroll-wrapper{
+	
+	border: 5px solid #EEEEEE;
+	border-radius: 6px;
+	
+}
+.inner-programms-left{
+	width: 48%;
+	max-width:603px;
+	position: relative;
+	.arrDown{
+		position: absolute;
+		width: fit-content;
+		right: 45px;
+		bottom: 40px;
+		z-index: 3;
+		color: $blue;
+		opacity: .6;
+		font-size: 60px;
+		transition: .8s;
+		animation-name:arrDown ;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-out;
+		display: none;
+		&.active-arrow{display: block;}
+		@media(max-width:767px){
+			right: 20px;bottom: 20px;
+		}
+		@media(max-width:479px){
+			display: none;
+			&.active-arrow{display: none;}
+			
+		}
+	}
+	@media(max-width:1279px){
+		width: 100%;
+	}
+}
+@keyframes arrDown{
+	0%{
+		
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-30px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+.inner-programms-img{
+	width: 48%;
+	max-width: 665px;
+	@media(max-width:1364px){
+		max-width:415px;
+	}
+	@media(max-width:1279px){
+		width: 100%;
+		max-width:100%;
+		margin-top: 60px;
+	}
+}
+.scroll-wrapper .programms-list{
+	padding-left: 50px;
+	padding-right: 80px;
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: left;
+	padding-right: 100px;
+	@media(max-width:1364px){
+		padding-right: 70px;
+	}
+	@media(max-width:1199px){
+		padding-right: 50px;
+	}
+	@media(max-width:479px){
+		padding-right: 10px;
+		padding-left: 20px;
+	}
+	
+}
+	
+.scroll-wrapper.scroll-wrapper--fix{
+	height: 542px;
+	overflow: auto;
+	direction: rtl;
+	scrollbar-color: $blue #fff;
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+		background-color: #FFFFFF;
+	  }
+	  
+	  &::-webkit-scrollbar-track {	
+		background-color: #fff;
+	  }
+	 
+	  &::-webkit-scrollbar-thumb {
+		
+		border-radius: 10px;
+		background-color: $blue;
+	  }
+}

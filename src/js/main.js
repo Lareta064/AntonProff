@@ -86,6 +86,9 @@ $(document).ready(function(){
 	var docRightArrow = $('#doc-right');
 	$('.docs-slider ').slick({
 		slidesToShow:1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		centerMode: true,
 		variableWidth: true,
 		infinite: true,
@@ -129,6 +132,7 @@ $(document).ready(function(){
 			
 			item.addEventListener('click', function(){
 				const itemTarget = item.getAttribute('data-modal');
+
 				for(let modal of modalWrapper){
 					const modalData = modal.getAttribute('data-modal');
 					if( modalData == itemTarget){
@@ -141,9 +145,7 @@ $(document).ready(function(){
 	}
 	
 	if(modalWrapper){
-		// function closeModal(modalItem){
-		// 	modalItem.classList.remove('visible-modal');
-		// }
+		
 		for(let item of modalWrapper){
 			const closeModalBtn = item.querySelector('.modal-close');
 			const modalOverlay = item.querySelector('.modal-overlay');
@@ -155,4 +157,66 @@ $(document).ready(function(){
 			})
 		}
 	}
+	// phone mask
+	// маска для телефона
+	$(".phone").mask("+7(999)999-99-99");
+	$.fn.setCursorPosition = function (pos) {
+		if ($(this).get(0).setSelectionRange) {
+			$(this).get(0).setSelectionRange(pos, pos);
+		} else if ($(this).get(0).createTextRange) {
+			var range = $(this).get(0).createTextRange();
+			range.collapse(true);
+			range.moveEnd('character', pos);
+			range.moveStart('character', pos);
+			range.select();
+		}
+	};
+	$('input.phone').click(function () {
+		$(this).setCursorPosition(3); // set position number
+	});
+
+	const programmsList = document.querySelector('#programms-list-inner');
+	const scrollWrapper = document.querySelector('#scrollWrapper');
+	const scrollWrapperArrow = document.querySelector('.arrDown');
+	
+	if(programmsList){
+		if(programmsList.clientHeight > 500){
+			scrollWrapper.classList.add('scroll-wrapper--fix');
+			scrollWrapperArrow.classList.add('active-arrow');
+			
+		}else{
+			scrollWrapper.classList.remove('scroll-wrapper--fix');
+			scrollWrapperArrow.classList.remove('active-arrow');
+			
+		}
+	}
+	//form
+	let formsArr = $(".contact-form");
+	$(formsArr).each(function(i, item){
+
+		$(item).on('submit', function (event) {
+		
+		event.preventDefault();
+		let string = $(item).serialize();
+		
+		$.ajax({
+			type: "POST",
+			url: "php/send.php",
+			data: string,
+			success: function (html) {
+				$(item).slideUp(800);
+				$(item).siblings('.answer').html(html);
+				if($('.modal-wrapper')){
+					setTimeout(function(){						
+						$('.modal-wrapper').removeClass('show-modal')
+						},3000)
+				}
+				
+			}
+		});
+
+		return false;
+
+		});
+	})
 })

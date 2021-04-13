@@ -1,0 +1,21 @@
+mixin progList(arg)
+	section.pt-130.inner-programms
+		.decor-number #[span 02.]
+		.container.pb-130  
+			.inner-programms-title 
+				h2.title-2 Обучение от 2-го разряда и&nbsp;выше
+			.inner-programms-content 
+				.inner-programms-left
+					.scroll-wrapper#scrollWrapper 
+						.arrDown &darr;
+						.programms-list.bull-list
+							h3.title-3 Наши программы 
+							ul#programms-list-inner 
+								each item in arg 
+									li #{item}
+							//- +bullList2('Электросварщик','Газоэлектросварщик','Электросварщик ручной сварки', 'Электросварщик-аргонщик', 'Газорезчик', 'Нагревальщик (сварщик) металла','Сварщик арматурных сеток')
+				.inner-programms-img
+					img(src="img/innerImg/progr.png", width="665" alt="img")
+		.sta.overlay-block
+			.container 
+				p Остерегайтесь мошенников при заказе удостоверений. Пользуйтесь услугами официальных учебных центров.

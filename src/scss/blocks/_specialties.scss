@@ -1,3 +1,4 @@
+/*======== SPECIALISTS HOME ========*/
 .specialties{
 	background-color: #fbfbfb;
 }
@@ -27,37 +28,37 @@
 		}
 	}
 
-	li a{
-		display: inline;
-		color: $text;
-		font-weight: 700;
-		font-size: 25px;
-		line-height: 1.6;
-		letter-spacing: -0.01em;
-		background-repeat: no-repeat;
-		background-position: center bottom 2px;
-		background-size: 100% 2px;
-		background-image: linear-gradient(to right, transparent, transparent);
-		transition: .5s;
-		@media#{$xl}{
-			font-size: 20px;
-		}
-		@media#{$sm}{
-			font-size: 18px;
-		}
-		@media#{$xs}{
-			font-size: 16px;
-		}
+}
+.bull-list li a{
+	display: inline;
+	color: $text;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	background-repeat: no-repeat;
+	background-position: center bottom 2px;
+	background-size: 100% 2px;
+	background-image: linear-gradient(to right, transparent, transparent);
+	transition: .5s;
+	@media#{$xl}{
+		font-size: 20px;
 	}
-	li:hover a{
-		background-image: linear-gradient(to right, $yellow, $yellow);
-		color: $blue;
+	@media#{$sm}{
+		font-size: 18px;
 	}
-	&+li{
-		margin-top: 22px;
-		@media#{$xl}{
-			margin-top: 30px;
-		}
+	@media#{$xs}{
+		font-size: 16px;
+	}
+}
+.bull-list  li:hover a{
+	background-image: linear-gradient(to right, $yellow, $yellow);
+	color: $blue;
+}
+.bull-list  li+li{
+	margin-top: 22px;
+	@media#{$xl}{
+		margin-top: 30px;
 	}
 }
 .specialties-title {
@@ -72,4 +73,14 @@
 		margin-bottom: 47px;	
 	}
 	
+}
+.border-grad{
+	display: inline!important;
+	width: fit-content;
+	background-repeat: no-repeat;
+	background-position: center bottom 2px;
+	background-size: 0 2px;
+	background-image: linear-gradient(to right, transparent, transparent);
+	transition: .5s;
+	&:hover{background-image: linear-gradient(to right, $yellow, $yellow); background-size: 100% 2px;}
 }

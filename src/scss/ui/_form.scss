@@ -1,3 +1,4 @@
+/*======== FORM ========*/
 .contact-form{
 	.form-item +.form-item{
 		margin-top: 30px;
@@ -9,9 +10,12 @@
 		border-bottom: 2px solid #fff;
 		height: 41px;
 		font-weight: 700;
+		color: #fff;
+		font-size: 18px;
 		&::placeholder{
 			font-weight: 700;
 			color: #fff;
+			font-size: 16px;
 		}
 	}
 	.form-row{
@@ -22,7 +26,7 @@
 		@media(max-width: 991px){
 			justify-content: center;
 			flex-direction: column;
-			.form-item + .form-item{margin-left: 0; margin-top: 20px;}
+			.form-item + .form-item{margin-left: auto; margin-top: 20px;}
 			
 		}
 	}
@@ -36,4 +40,9 @@
 		}
 	
 	}
+}
+.contact-form__success{
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
 }
