@@ -38,7 +38,7 @@ gulp.task("pug", function(callback) {
 // Таск для компиляции SCSS в CSS
 gulp.task("scss", function(callback) {
     return gulp
-        .src("./src/scss/main.scss")
+        .src("./src/scss/style.scss")
         .pipe(
             plumber({
                 errorHandler: notify.onError(function(err) {
@@ -86,7 +86,7 @@ gulp.task("copy:js", function(callback) {
 // группировка меди запросов
 gulp.task('groupmedia', function (callback) {
     
-    return gulp.src('./build/css/main.css')
+    return gulp.src('./build/css/style.css')
         .pipe(gcmq())
         .pipe(gulp.dest('./build/css/'));
         callback();
